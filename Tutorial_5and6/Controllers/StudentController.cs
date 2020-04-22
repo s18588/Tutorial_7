@@ -20,20 +20,24 @@ using String = System.String;
         [HttpGet("{id}")]
         public IActionResult getStudent(string id)
         {
-            SqlConnection c = new SqlConnection();
+            
             using (var client = new SqlConnection(connstring))
             using (var com = new SqlCommand())
             {
                 com.Connection = client;
-                com.CommandText = "select semester from Student left join Enrollment E on Student.IdEnrollment = E.IdEnrollment left join Studies S on E.IdStudy = S.IdStudy where Student.IndexNumber=@id;";
+                com.CommandText = "use s18588; select * from Student left join Enrollment E on Student.IdEnrollment = E.IdEnrollment left join Studies S on E.IdStudy = S.IdStudy where Student.IndexNumber=@id;";
                 com.Parameters.AddWithValue("id", id);
                 client.Open();
                 var dr = com.ExecuteReader();
                 while (dr.Read())
                 {
                     var st = new Student();
-                    st.Semester = int.Parse(dr["Semester"].ToString());
-                    return Ok(st.Semester);
+                    st.FirstName = dr["FirstName"].ToString();
+                    st.LastName = dr["LastName"].ToString();
+                    st.BirthDate = DateTime.Parse(dr["BirthDate"].ToString());
+                    st.Semester = dr["Semester"].ToString();
+                    st.Studies = dr["Name"].ToString();
+                    return Ok(st);
                 }
 
                 return NotFound("Not found");

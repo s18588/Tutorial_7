@@ -1,6 +1,6 @@
 using System;
 
-namespace Tutorial_5
+namespace Tutorial_5and6
 {
     public class WeatherForecast
     {
