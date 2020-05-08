@@ -3,7 +3,6 @@ using System.Data.SqlClient;
 using System.Net.Http;
 using System.Runtime;
 using Microsoft.AspNetCore.Mvc;
-using Tutorial5.Models;
 using Tutorial_5and6.Requests;
 using Tutorial_5and6.Services;
 
@@ -11,7 +10,7 @@ namespace Tutorial_5and6.Controllers
 {
     
     [ApiController]
-    [Route("api/enrollment")]
+    [Route("api/tasks/1")]
     public class EnrollmentController : ControllerBase
     {
         private IStudentsDBService _service;
@@ -25,9 +24,16 @@ namespace Tutorial_5and6.Controllers
             "Data Source=10.1.1.36,1433;Initial Catalog=s18588;User ID=apbds18588;Password=admin";
 
         
-        
+                
         public IActionResult addStudent(EnrollStudentRequest request)
         {
+            
+            
+            _service.EnrollStudents(request);
+            var response = new EnrollStudentResponse();
+            return Ok( response);
+            
+            
             // var response = new EnrollStudentResponse();
             // var cl = new HttpClient();
             // cl.BaseAddress = new Uri("http://localhost:5001/api/enrollment");
@@ -95,9 +101,9 @@ namespace Tutorial_5and6.Controllers
             //     }
             //     transaction.Commit();
             // }
-            _service.EnrollStudents(request);
-            var response = new EnrollStudentResponse();
-            return Ok( response);
+            //
+            // _service.EnrollStudents(request);
+            // return Ok( response);
 
 
         }

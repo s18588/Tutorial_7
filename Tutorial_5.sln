@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial_5and6", "Tutorial_5and6\Tutorial_5and6.csproj", "{1A467FFF-A4D0-412A-9D50-F575A49E7D90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial_7", "Tutorial_7\Tutorial_7.csproj", "{1A467FFF-A4D0-412A-9D50-F575A49E7D90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

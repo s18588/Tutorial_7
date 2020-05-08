@@ -1,15 +1,10 @@
 using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Net.Http;
-using System.Threading.Tasks;
 using Tutorial_5and6.Controllers;
 using Tutorial_5and6.Requests;
-using Tutorial_5and6.Services;
 
-
-namespace Services
+namespace Tutorial_5and6.Services
 {
     public class SqlServerStudentDbService : IStudentsDBService
     {

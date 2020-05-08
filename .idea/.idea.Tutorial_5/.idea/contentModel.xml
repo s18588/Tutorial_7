@@ -8,7 +8,7 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Tutorial_5.sln" t="IncludeFlat" />
-      <e p="Tutorial_5and6" t="IncludeRecursive">
+      <e p="Tutorial_7" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -16,6 +16,9 @@
           <e p="EnrollmentController.cs" t="Include" />
           <e p="Methods.cs" t="Include" />
           <e p="StudentController.cs" t="Include" />
+        </e>
+        <e p="Handlers" t="Include">
+          <e p="Authorization.cs" t="Include" />
         </e>
         <e p="Middleware" t="Include">
           <e p="Logger.cs" t="Include" />
@@ -27,7 +30,7 @@
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="Tutorial_5and6.AssemblyInfo.cs" t="Include" />
+              <e p="Tutorial_7.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -38,6 +41,7 @@
         <e p="Requests" t="Include">
           <e p="EnrollStudentRequest.cs" t="Include" />
           <e p="EnrollStudentResponse.cs" t="Include" />
+          <e p="LoginRequest.cs" t="Include" />
           <e p="PromoteStudentRequest.cs" t="Include" />
           <e p="PromoteStudentResponse.cs" t="Include" />
         </e>
@@ -46,7 +50,7 @@
           <e p="SqlServerStudentDbService.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="Tutorial_5and6.csproj" t="IncludeRecursive" />
+        <e p="Tutorial_7.csproj" t="IncludeRecursive" />
         <e p="WeatherForecast.cs" t="Include" />
       </e>
     </e>

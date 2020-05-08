@@ -1,7 +1,7 @@
 
 using DateTime = System.DateTime;
 
-namespace Tutorial5.Models
+namespace Tutorial_5and6.Models
 {
     public class Student
     {
