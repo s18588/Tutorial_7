@@ -61,6 +61,8 @@ namespace Tutorial_5and6
             }
 
             app.UseHttpsRedirection();
+            
+            
 
             app.UseRouting();
             app.UseAuthentication();

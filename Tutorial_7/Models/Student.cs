@@ -12,5 +12,7 @@ namespace Tutorial_5and6.Models
         public DateTime BirthDate { get; set; }
         public string Semester { get; set; }
         public string Studies { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 }
