@@ -19,7 +19,9 @@
         </e>
         <e p="Handlers" t="Include">
           <e p="Authorization.cs" t="Include" />
+          <e p="Hashish.cs" t="Include" />
         </e>
+        <e p="log.txt" t="Include" />
         <e p="Middleware" t="Include">
           <e p="Logger.cs" t="Include" />
           <e p="LoggingMiddleware.cs" t="Include" />
@@ -42,8 +44,10 @@
           <e p="EnrollStudentRequest.cs" t="Include" />
           <e p="EnrollStudentResponse.cs" t="Include" />
           <e p="LoginRequest.cs" t="Include" />
+          <e p="LoginResponse.cs" t="Include" />
           <e p="PromoteStudentRequest.cs" t="Include" />
           <e p="PromoteStudentResponse.cs" t="Include" />
+          <e p="TokenRefreshRequest.cs" t="Include" />
         </e>
         <e p="Services" t="Include">
           <e p="IStudentsDBService.cs" t="Include" />

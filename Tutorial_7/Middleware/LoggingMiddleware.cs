@@ -34,6 +34,16 @@ namespace Tutorial_5and6.Middleware
                     {
                         bodyParameters = await reader.ReadToEndAsync();
                     }
+                    
+                    var LogWriter = new FileStream("requestLog.txt", FileMode.Create);
+                    using(var writer = new StreamWriter(LogWriter))
+                    {
+                        string text = $"Path: {path} \n" +
+                                      $"QueryString:{queryString} \n" +
+                                      $"Method: {method} \n" +
+                                      $"Body Parameters: {bodyParameters}";
+                        writer.WriteLine(text);
+                    }
                 }
                 catch (Exception e)
                 {

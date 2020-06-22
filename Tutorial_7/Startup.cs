@@ -16,6 +16,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Tutorial_5and6.Middleware;
 using Tutorial_5and6.Services;
 
 namespace Tutorial_5and6
@@ -61,7 +62,7 @@ namespace Tutorial_5and6
             }
 
             app.UseHttpsRedirection();
-            
+            app.UseMiddleware<LoggingMiddleware>();
             
 
             app.UseRouting();
